@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Khafita Chandra Khasih</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- FIX 1: script JS tidak boleh di-link sebagai stylesheet -->
+  <script defer src="script New.js"></script>
+  <link rel="stylesheet" href="style New.css">
+</head>
+<body>
+
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">PitaChandra</div>
+    <ul class="nav-links">
+      <li><a href="#aboutme">About Me</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#portfolio">Portofolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <!-- FIX 2: teks eyebrow dilengkapi -->
+      <div class="hero-eyebrow">I'M A DEVELOPER</div>
+      <h1>Khafita<br /><em>Chandra</em><br />Khasih</h1>
+      <!-- FIX 3: tag <p> yang tidak ditutup -->
+      <p class="hero-desc">
+        Software engineering, a web developer is a professional who creates and maintains websites using programming languages HTML, CSS and JavaScript.
+      </p>
+      <div class="hero-cta">
+        <a href="#portfolio" class="btn-primary">My portofolio →</a>
+        <a href="#contact" class="btn-outline">Contact me</a>
+      </div>
+
+      <div class="hero-socials">
+        <span class="hero-socials-label">Follow</span>
+        <!-- GitHub -->
+        <a href="#" class="hero-social-btn" title="GitHub" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <!-- WhatsApp -->
+        <a href="#" class="hero-social-btn" title="WhatsApp" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+        <!-- TikTok -->
+        <a href="#" class="hero-social-btn" title="TikTok" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+        </a>
+        <!-- Instagram -->
+        <a href="#" class="hero-social-btn" title="Instagram" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+      </div>
+    </div><!-- FIX 4: tutup .hero-text -->
+  </section><!-- FIX 5: tutup section.hero -->
+
+  <!-- ABOUT ME -->
+  <section id="aboutme">
+    <div class="section-label">About me</div>s
+    <h2>Get to know closer</h2>
+    <div class="aboutme-grid">
+
+      <div class="aboutme-visual">
+        <div class="aboutme-card">
+          <div class="aboutme-initials"></div>
+          <div class="aboutme-avatar">PT</div>
+          <div class="aboutme-name">Khafita Chandra Khasih</div>
+          <div class="aboutme-role">UI/UX · Frontend · Branding</div>
+          <div class="aboutme-chips">
+            <span class="aboutme-chip">Figma</span>
+            <span class="aboutme-chip">JavaScript</span>
+            <span class="aboutme-chip">Github</span>
+            <!-- FIX 6: tag <span> yang tidak ditutup dengan benar -->
+            <span class="aboutme-chip">CSS</span>
+            <span class="aboutme-chip">HTML</span>
+            <span class="aboutme-chip">Bootstrap</span>
+          </div>
+        </div>
+        <div class="aboutme-deco"></div>
+        <div class="aboutme-deco2"></div>
+      </div>
+
+      <div class="aboutme-content">
+        <p>Hello! My name is <strong>Khafita Chandra Khasih.</strong> I was born on January 12, 2010. Currently, I am a 10th-grade student at <strong>SMKN TENGARAN,</strong> majoring in Software and Game Development (PPLG).</p>
+
+        <p>I have a strong interest in technology and enjoy learning new things, especially those related to software development and digital creativity. For me, technology is a place to grow, be creative, and create something useful for others.</p>
+
+        <p>Outside of school activities, I really love cats because they are cute and adorable. I also have several hobbies that I enjoy in my free time, such as cooking, reading fiction books, and watching movies. These activities help me relax while also giving me inspiration and imagination in everyday life.
+        I believe that with enthusiasm for learning, creativity, and hard work, I can continue to grow into a better person and achieve my dreams in the future.</p>
+
+        <div class="aboutme-facts">
+          <div class="aboutme-fact">
+            <div class="aboutme-fact-num">15+</div>
+            <div class="aboutme-fact-label">Desain poster dll</div>
+          </div>
+          <div class="aboutme-fact">
+            <div class="aboutme-fact-num">5+</div>
+            <div class="aboutme-fact-label">Tugas website</div>
+          </div>
+          <div class="aboutme-fact">
+            <div class="aboutme-fact-num">20+</div>
+            <div class="aboutme-fact-label">Projek done</div>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-label" style="margin-bottom:.75rem;">Hobi &amp; Minat</div>
+          <div class="aboutme-hobbies">
+            <span class="hobby-tag">Design Grafis</span>
+            <span class="hobby-tag">Cat</span>
+            <span class="hobby-tag">Cooking</span>
+            <span class="hobby-tag">Film</span>
+            <span class="hobby-tag">Novel</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="about">
+    <div class="section-label">Skills</div>
+    <h2>What I<br />Offer</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">🎨</div>
+        <h3>UI / UX Design</h3>
+        <p>Wireframing, prototyping, and user interface design based on user research using Figma and Canva.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">💻</div>
+        <h3>Frontend Development</h3>
+        <p>Building responsive websites with HTML, CSS, JavaScript, and React that are fast and accessible.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">✦</div>
+        <h3>Brand Identity</h3>
+        <p>Creating cohesive brand identities — including logos, color guidelines, and impactful typography.</p>
+      </div>
+    </div>
+
+    <!-- PROGRESS BARS -->
+    <!-- FIX 7: selaraskan persentase label dengan data-width -->
+    <div class="progress-section">
+      <div class="progress-item">
+        <div class="progress-header">
+          <span class="progress-label">JavaScript</span>
+          <span class="progress-pct">20%</span>
+        </div>
+        <div class="progress-track"><div class="progress-fill" data-width="20"></div></div>
+      </div>
+      <div class="progress-item">
+        <div class="progress-header">
+          <span class="progress-label">Github</span><!-- FIX 8: typo "Ghithub" -->
+          <span class="progress-pct">70%</span>
+        </div>
+        <div class="progress-track"><div class="progress-fill" data-width="70"></div></div>
+      </div>
+      <div class="progress-item">
+        <div class="progress-header">
+          <span class="progress-label">CSS</span>
+          <span class="progress-pct">50%</span>
+        </div>
+        <div class="progress-track"><div class="progress-fill" data-width="50"></div></div>
+      </div>
+      <div class="progress-item">
+        <div class="progress-header">
+          <span class="progress-label">Bootstrap</span>
+          <span class="progress-pct">40%</span>
+        </div>
+        <div class="progress-track"><div class="progress-fill" data-width="40"></div></div>
+      </div>
+      <div class="progress-item">
+        <div class="progress-header">
+          <span class="progress-label">HTML</span>
+          <span class="progress-pct">75%</span>
+        </div>
+        <div class="progress-track"><div class="progress-fill" data-width="75"></div></div>
+      </div>
+      <div class="progress-item">
+        <div class="progress-header">
+          <span class="progress-label">Figma</span>
+          <span class="progress-pct">60%</span>
+        </div>
+        <div class="progress-track"><div class="progress-fill" data-width="60"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="section-label">Portofolio</div>
+    <h2>Experience</h2>
+    <div class="portfolio-grid">
+
+      <div class="project-card">
+        <div class="project-thumb thumb-1">
+          <div class="hero-img-wrap">
+            <img src="sem1.jpeg" alt="Website Semester 1" class="projects-grid">
+          </div>
+          <span class="thumb-label">Recycle</span>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">Website 1</div>
+          <h3>Website semester 1</h3>
+          <p></p>
+          <a class="learn-btn" href="index (2).html">Lihat Detail →</a>
+        </div>
+      </div>
+
+      <!-- FIX 9: hapus tanda "-" liar dan pindahkan <img> ke tempat yang benar -->
+      <div class="project-card">
+        <div class="project-thumb thumb-2">
+          <div class="hero-img-wrap"></div>
+           <img src="tugas2.jpg" alt="Website 2" class="projects-grid">
+          <span class="thumb-label">Sekolah</span>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">Website 2</div>
+          <h3>Website tugas 2</h3>
+          <p></p>
+          <a class="learn-btn" href="tugas2.html">Lihat Detail →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb thumb-3">
+          <div class="hero-img-wrap"></div>
+           <img src="tugas363.jpg" alt="Website 3" class="projects-grid">
+
+          <span class="thumb-label">Lingkungan</span>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">Website 3</div>
+          <h3>Website tugas 3</h3>
+          <p></p>
+          <a class="learn-btn" href="tugas3.html">Lihat Detail →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb thumb-4">
+          <div class="hero-img-wrap"></div>
+           <img src="tugas4.webp" alt="Website 4" class="projects-grid">
+          <span class="thumb-label">Flowers Shop</span>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">Website 4</div>
+          <h3>Website tugas 4</h3>
+          <p></p>
+          <a class="learn-btn" href="tugas4.html">Lihat Detail →</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb thumb-5">
+          <div class="hero-img-wrap"></div>
+           <img src="tugas5.jpg" alt="Website 5" class="projects-grid">
+          <span class="thumb-label">Healthy food &amp; catering</span>
+        </div>
+        <div class="project-body">
+          <div class="project-tag">Website 5</div>
+          <h3>Website tugas 5</h3>
+          <p></p>
+          <a class="learn-btn" href="tugas5.html">Lihat Detail →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="section-label">Contact</div>
+      <h2>Let's Collaboratte</h2>
+
+      <div class="contact-layout">
+
+        <div class="contact-left">
+          <p>Have any interesting project ideas? I am always open to discussions, freelance collaborations, and full-time opportunities. Don't hesitate to reach out!</p>
+
+          <div class="contact-cards">
+            <a href="mailto:khafitachandra0@gmail.com" class="contact-card">
+              <div class="contact-card-icon">✉</div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">Email</span>
+                <span class="contact-card-value">khafitachandra0@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://wa.me/6285928963288" class="contact-card">
+              <div class="contact-card-icon">📞</div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">Telephone / WhatsApp</span>
+                <span class="contact-card-value">+62 859 2896 3288</span>
+              </div>
+            </a>
+            <a href="#" class="contact-card">
+              <div class="contact-card-icon">📍</div>
+              <div class="contact-card-info">
+                <span class="contact-card-label">Location</span>
+                <span class="contact-card-value">Tengaran, Kec. Tengaran, Kab. Semarang, Jawa Tengah, Indonesia</span>
+              </div>
+            </a>
+          </div>
+
+          <div>
+            <div class="contact-card-label" style="margin-bottom:.75rem; display:block;">Find me at</div>
+            <div class="contact-social-cards">
+
+              <!-- WhatsApp -->
+              <a href="https://wa.me/qr/XTXY6XNDHI2TK1" class="contact-social-card wa" title="WhatsApp" aria-label="WhatsApp">
+                <div class="csc-icon">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                </div>
+                <div class="csc-info">
+                  <span class="csc-name">WhatsApp</span>
+                  <span class="csc-handle">+62 859 2896 3288</span>
+                </div>
+                <div class="csc-arrow">→</div>
+              </a>
+
+              <!-- TikTok -->
+              <a href="https://www.tiktok.com/@pitachndra?_r=1&_t=ZS-96StMurI94u" class="contact-social-card tt" title="TikTok" aria-label="TikTok">
+                <div class="csc-icon">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                </div>
+                <div class="csc-info">
+                  <span class="csc-name">TikTok</span>
+                  <span class="csc-handle">@pitachandra</span>
+                </div>
+                <div class="csc-arrow">→</div>
+              </a>
+
+              <!-- Instagram -->
+              <!-- FIX 10: xmlns yang salah diperbaiki -->
+              <a href="https://www.instagram.com/pitachndra?igsh=OW5hcHQ2cDVlczMy" class="contact-social-card ig" title="Instagram" aria-label="Instagram">
+                <div class="csc-icon">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                </div>
+                <div class="csc-info">
+                  <span class="csc-name">Instagram</span>
+                  <span class="csc-handle">@pitachandra</span>
+                </div>
+                <div class="csc-arrow">→</div>
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <div class="contact-form-title">send message</div>
+          <div class="contact-form-sub">I will reply within 1x24 hours.</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>name</label>
+              <input type="text" placeholder="Your full name" />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="khafitachandra0@gmail.com" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>project type</label>
+            <select>
+              <option value="" disabled selected>I will reply within 1x24 hours...</option>
+              <option>UI / UX Design</option>
+              <option>Frontend Development</option>
+              <option>Brand Identity</option>
+              <option>Consultation</option>
+              <option>Others</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Tell me about your project..."></textarea>
+          </div>
+
+          <button class="form-submit">Send Message→</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">PitaChandra</div>
+        <p>Passionate designer & developer creating meaningful and engaging digital experiences.</p>
+        <div class="footer-social">
+          <!-- GitHub -->
+          <a href="#" title="GitHub" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+          <!-- WhatsApp -->
+          <a href="#" title="WhatsApp" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <!-- TikTok -->
+          <a href="#" title="TikTok" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+          </a>
+          <!-- Instagram -->
+          <a href="#" title="Instagram" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#aboutme">About me</a></li>
+          <li><a href="#portfolio">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Service</h4>
+        <ul>
+          <li><a href="#">UI / UX Design</a></li>
+          <li><a href="#">Frontend Dev</a></li>
+          <li><a href="#">Brand Identity</a></li>
+          <li><a href="#">Consultation</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:khafitachandra0@gmail.com">khafitachandra0@gmail.com</a></li>
+          <li><a href="https://wa.me/6285928963288">+62 859 2896 3288</a></li>
+          <li><a href="#">Tengaran, Kec. Tengaran, Kab. Semarang, Jawa Tengah, Indonesia</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span class="footer-bottom-left">© 2026 PitaChandra ·</span>
+      <div class="footer-bottom-right">
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+</body><!-- FIX 11: tambahkan tag </body> yang hilang -->
+</html>
