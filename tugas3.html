@@ -1,0 +1,1242 @@
+<DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Environs</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome (Icon Sosial Media) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>/* TOP BAR */
+.top-bar {
+  background: #2f6b3c;
+  color: white;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+.top-left i {
+  margin-right: 5px;
+}
+
+/* ICON SOSIAL */
+.top-right a {
+  color: white;
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.top-right a:hover {
+  background: white;
+  color: #2f6b3c;
+}
+
+/* ================= NAVBAR ================= */
+.navbar-brand {
+  font-size: 28px;
+  color: #2f6b3c !important;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #2f6b3c !important;
+}
+
+/* CAROUSEL */
+.carousel-item img {
+  height: 90vh;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+/* TEXT TENGAH */
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: unset;
+}
+
+.carousel-caption h6 {
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.carousel-caption h1 {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+/* ABOUT */
+.about-section {
+  background: #f8f9fa;
+}
+
+.about-img {
+  border-radius: 5px;
+}
+
+/* BOX KANAN */
+.about-box {
+  background: #e9dfc7;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+/* TAB BUTTON */
+.tab-btn {
+  border: none;
+  background: #ddd;
+  padding: 8px 20px;
+  margin-right: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  background: #2f6b3c;
+  color: white;
+}
+
+/* BUTTON */
+.about-box .btn {
+  margin-top: 10px;
+}
+
+/* WHAT WE DO */
+.what-we-do {
+  background: #f8f9fa;
+}
+
+/* CARD */
+.custom-card {
+  text-align: left;
+}
+
+/* GAMBAR */
+.img-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-box img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* TEXT DI ATAS GAMBAR */
+.overlay-text {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* DESKRIPSI */
+.custom-card p {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* DONATION */
+.donation-section {
+  background: #f8f9fa;
+}
+
+/* CARD */
+.donation-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.donation-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+/* OVERLAY GELAP */
+.donation-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+/* TEXT */
+.donation-overlay h4 {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.donation-overlay p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.donation-overlay span {
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
+}
+
+/* ================= ACHIEVEMENTS ================= */
+.achievements-section {
+  background: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac') center/cover no-repeat;
+  position: relative;
+  padding: 100px 0;
+}
+
+/* overlay gelap */
+.achievements-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+/* biar konten di atas overlay */
+.achievements-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* BOX */
+.achieve-box {
+  border: 1px solid rgba(255,255,255,0.5);
+  padding: 25px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.achieve-box:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* ANGKA (garis putus-putus) */
+.number-box {
+  border: 2px dashed rgba(255,255,255,0.7);
+  padding: 10px;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #00ff88;
+}
+
+/* ICON */
+.achieve-box i {
+  color: white;
+}
+
+/* EVENT */
+.event-section {
+  background: #f8f9fa;
+}
+
+/* ARROW */
+.arrow-btn {
+  background: #2f6b3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+}
+
+/* CARD */
+.event-card {
+  overflow: hidden;
+}
+
+/* GAMBAR */
+.event-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* BAGIAN HIJAU */
+.event-content {
+  background: #2f6b3c;
+  color: white;
+  padding: 20px;
+  text-align: left;
+  border-top: 3px dotted rgba(255,255,255,0.5);
+}
+
+/* TEXT */
+.event-content h5 {
+  margin: 10px 0;
+}
+
+.event-content p {
+  font-size: 14px;
+}
+
+/* BUTTON */
+.event-content .btn {
+  margin-top: 10px;
+}
+
+/* NEWS */
+.news-section {
+  background: #f8f9fa;
+}
+
+/* CARD */
+.news-card {
+  background: #fff;
+  border: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+/* GAMBAR */
+.news-img {
+  position: relative;
+}
+
+.news-img img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* OVERLAY (tanggal + icon) */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* CONTENT */
+.news-content {
+  padding: 15px;
+  text-align: left;
+}
+
+.news-content h6 {
+  font-weight: bold;
+}
+
+.news-content p {
+  font-size: 14px;
+}
+
+/* BUTTON */
+.news-content .btn {
+  margin-top: 10px;
+}
+
+/* Halam galeri foto*/
+.gallery-section{
+    background:#f8f9fa;
+}
+
+.gallery-section h2{
+    font-size:28px;
+}
+
+.gallery-card{
+    position:relative;
+    overflow:hidden;
+}
+
+.gallery-card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    transition:0.4s;
+}
+
+.gallery-card:hover img{
+    transform:scale(1.05);
+}
+
+.overlay{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:rgba(0,0,0,0.4);
+    color:white;
+    text-align:center;
+    padding:10px;
+    font-size:14px;
+    letter-spacing:1px;
+}
+
+.volunteer-section{
+    background:#f8f9f6;
+}
+
+.volunteer-card{
+    position:relative;
+    overflow:hidden;
+}
+
+.volunteer-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.volunteer-overlay{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:rgba(0,0,0,0.4);
+    color:white;
+    padding:8px;
+    text-align:center;
+}
+
+/* Volunteer */
+.volunteer-overlay h6{
+    margin:0;
+    font-size:14px;
+}
+
+.volunteer-overlay small{
+    font-size:12px;
+}
+
+.volunteer-list{
+    list-style:none;
+    padding-left:0;
+}
+
+.volunteer-list li{
+    margin-bottom:8px;
+    position:relative;
+    padding-left:22px;
+}
+
+.volunteer-list li::before{
+    content:"✔";
+    position:absolute;
+    left:0;
+    color:#28a745;
+    font-size:14px;
+}
+
+/* FOOTER */
+.footer-section{
+    background:#111;
+    color:#bbb;
+    font-size:14px;
+}
+
+.footer-section h5{
+    color:white;
+    margin-bottom:15px;
+}
+
+.footer-section p{
+    color:#aaa;
+}
+
+.footer-list{
+    list-style:none;
+    padding-left:0;
+}
+
+.footer-list li{
+    margin-bottom:8px;
+    position:relative;
+    padding-left:15px;
+}
+
+.footer-list li::before{
+    content:">";
+    position:absolute;
+    left:0;
+    color:#28a745;
+}
+
+.footer-section img{
+    width:100%;
+    height:60px;
+    object-fit:cover;
+}</style>
+
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="container d-flex justify-content-between align-items-center">
+
+    <!-- Kiri -->
+    <div class="top-left">
+      <i class="fa fa-envelope"></i> Example@gmail.com
+      <span class="mx-2">|</span>
+      <i class="fa fa-phone"></i> +01234567890
+    </div>
+
+    <!-- Kanan -->
+    <div class="top-right">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-pinterest-p"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+  </div>
+</div>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold" href="#">Environs</a>
+
+    <!-- Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Causes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+            Pages
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Page 1</a></li>
+            <li><a class="dropdown-item" href="#">Page 2</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+
+        <!-- Button -->
+        <li class="nav-item ms-3">
+          <a href="#" class="btn btn-success px-4">Donate Now</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- 1. CAROUSEL -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicator -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- Slide -->
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" class="d-block w-100">
+      <div class="carousel-caption">
+        <h6>WAKTUNYA BERAKSI</h6>
+        <h1>Pulihkan Hijau Bumi Kita</h1>
+        <p>Satu pohon yang Anda tanam hari ini adalah nafas bagi generasi mendatang.</p>
+        <a href="#" class="btn btn-success">Mulai Menanam</a>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" class="d-block w-100">
+      <div class="carousel-caption">
+        <h6>SELAMATKAN BUMI</h6>
+        <h1>Ayo Tanam Pohon</h1>
+        <p>Bersama kita bisa membuat perubahan untuk lingkungan.</p>
+        <a href="#" class="btn btn-success">Gabung Sekarang</a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1492496913980-501348b61469" class="d-block w-100">
+      <div class="carousel-caption">
+        <h6>LINGKUNGAN HIJAU</h6>
+        <h1>Jaga Alam Kita</h1>
+        <p>Lingkungan bersih untuk masa depan yang lebih baik.</p>
+        <a href="#" class="btn btn-success">Mulai Aksi</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 2. ABOUT US -->
+<section class="about-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- KIRI (GAMBAR) -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="https://images.unsplash.com/photo-1497493292307-31c376b6e479" class="img-fluid about-img" alt="">
+      </div>
+
+      <!-- KANAN (TEXT) -->
+      <div class="col-lg-6">
+        <small class="text-success fw-bold">ABOUT US</small>
+        <h2 class="fw-bold mt-2">
+          Misi Utama Kami Adalah Menjaga Kelestarian Alam
+        </h2>
+
+        <p class="text-muted mt-3">
+          Kami adalah organisasi yang berdedikasi untuk memulihkan ekosistem dan 
+          mengedukasi masyarakat tentang pentingnya keberlanjutan. Bersama, kita bisa 
+          menciptakan dunia yang lebih hijau untuk generasi mendatang.
+        </p>
+
+        <!-- TAB BOX -->
+        <div class="about-box mt-4">
+
+          <!-- TAB BUTTON -->
+          <div class="d-flex mb-3">
+            <button class="tab-btn active">About</button>
+            <button class="tab-btn">Mission</button>
+            <button class="tab-btn">Vision</button>
+          </div>
+
+          <!-- ISI -->
+          <h6 class="fw-bold">TENTANG KAMI</h6>
+          <p>
+            Mengurangi dampak pemanasan global melalui aksi penanaman hutan kembali 
+            dan kampanye pengurangan limbah plastik secara berkelanjutan.
+          </p>
+
+          <a href="#" class="btn btn-success btn-sm">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. WHAT WE DO -->
+<section class="what-we-do py-5">
+  <div class="container text-center">
+
+    <!-- Judul -->
+    <small class="text-success fw-bold">WHAT WE DO</small>
+    <h2 class="fw-bold mb-5">
+      Kontribusi Nyata Kami Untuk Menjaga <br>
+      Kelestarian Lingkungan
+    </h2>
+
+    <!-- CARD -->
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="custom-card">
+          <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399" class="img-fluid">
+            <div class="overlay-text">Penggalangan Dana</div>
+          </div>
+          <p>
+            Mengumpulkan dukungan finansial secara transparan untuk membiayai proyek penghijauan 
+            dan pemulihan lahan kritis di berbagai wilayah.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="custom-card">
+          <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" class="img-fluid">
+            <div class="overlay-text">Kemitraan Strategis</div>
+          </div>
+          <p>
+            Bekerja sama erat dengan pemerintah dan sektor swasta untuk menyediakan layanan 
+            konsultasi lingkungan yang berkelanjutan.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="custom-card">
+          <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="img-fluid">
+            <div class="overlay-text">Ekowisata Terpadu</div>
+          </div>
+          <p>
+            Menyediakan tur edukasi alam yang dipandu oleh ahli profesional untuk meningkatkan 
+            kesadaran masyarakat tentang ekosistem hutan.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="custom-card">
+          <div class="img-box">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" class="img-fluid">
+            <div class="overlay-text">Konservasi Satwa</div>
+          </div>
+          <p>
+            Melindungi habitat asli hewan liar dari perburuan dan kerusakan lahan guna menjaga 
+            rantai makanan serta keanekaragaman hayati.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Button -->
+    <div class="mt-5">
+      <a href="#" class="btn btn-success px-4">Read More</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- 4. DONATION-->
+<section class="donation-section py-5">
+  <div class="container text-center">
+
+    <!-- Judul -->
+    <small class="text-success fw-bold">DONATION</small>
+    <h2 class="fw-bold mb-5">Your money will save our life</h2>
+
+    <!-- CARD -->
+    <div class="row g-4 justify-content-center">
+
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="donation-card">
+          <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" class="img-fluid">
+          <div class="donation-overlay">
+            <small>ORGANIC</small>
+            <h4>Help Us More</h4>
+            <p>Protect Environments</p>
+            <span>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="donation-card">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" class="img-fluid">
+          <div class="donation-overlay">
+            <small>ECOSYSTEM</small>
+            <h4>Help Us More</h4>
+            <p>Protect Environments</p>
+            <span>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="donation-card">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="img-fluid">
+          <div class="donation-overlay">
+            <small>RECYCLING</small>
+            <h4>Help Us More</h4>
+            <p>Protect Environments</p>
+            <span>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BUTTON -->
+    <div class="mt-5">
+      <a href="#" class="btn btn-success px-4">All Donation</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- 5. ACHIEVEMENTS -->
+<section class="achievements-section d-flex align-items-center">
+  <div class="container text-center text-white">
+
+    <!-- Judul -->
+    <small class="text-success fw-bold">ACHIEVEMENTS</small>
+    <p class="mb-5">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+    </p>
+
+    <!-- BOX -->
+    <div class="row g-4 justify-content-center">
+
+      <!-- 1 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="achieve-box">
+          <i class="fas fa-thumbs-up fa-2x mb-2"></i>
+          <h6>Beavers Saved</h6>
+          <div class="number-box">2450+</div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="achieve-box">
+          <i class="fas fa-file-invoice-dollar fa-2x mb-2"></i>
+          <h6>Funds Collected</h6>
+          <div class="number-box">513 $</div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="achieve-box">
+          <i class="fas fa-user fa-2x mb-2"></i>
+          <h6>Volunteer</h6>
+          <div class="number-box">713+</div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="achieve-box">
+          <i class="fas fa-heart fa-2x mb-2"></i>
+          <h6>Days Of Help</h6>
+          <div class="number-box">7487+</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BUTTON -->
+    <div class="mt-5">
+      <a href="#" class="btn btn-success px-4">Join With Us</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- 6. EVENTS -->
+<section class="event-section py-5">
+  <div class="container text-center">
+
+    <!-- Judul -->
+    <small class="text-success fw-bold">UPCOMING EVENTS</small>
+    <h2 class="fw-bold mb-5">
+      Bantulah hari ini karena besok mungkin Anda <br>
+      yang membutuhkan lebih banyak bantuan!
+    </h2>
+
+    <!-- Arrow -->
+    <div class="d-flex justify-content-between mb-3 px-3">
+      <button class="arrow-btn"><i class="fas fa-arrow-left"></i></button>
+      <button class="arrow-btn"><i class="fas fa-arrow-right"></i></button>
+    </div>
+
+    <!-- CARD -->
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="event-card">
+          <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d" class="img-fluid">
+          <div class="event-content">
+            <small>📍 Jakarta | ⏰ 10 Feb, 2024</small>
+            <h5>How To Build A Cleaning Plan</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adip sed eiusmod tempor.</p>
+            <a href="#" class="btn btn-light btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="event-card">
+          <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" class="img-fluid">
+          <div class="event-content">
+            <small>📍 Bandung | ⏰ 12 Feb, 2024</small>
+            <h5>How To Build A Cleaning Plan</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adip sed eiusmod tempor.</p>
+            <a href="#" class="btn btn-light btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="event-card">
+          <img src="https://images.unsplash.com/photo-1497493292307-31c376b6e479" class="img-fluid">
+          <div class="event-content">
+            <small>📍 Surabaya | ⏰ 15 Feb, 2024</small>
+            <h5>How To Build A Cleaning Plan</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adip sed eiusmod tempor.</p>
+            <a href="#" class="btn btn-light btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- 7. LATEST NEWS -->
+<section class="news-section py-5">
+  <div class="container text-center">
+
+    <!-- Judul -->
+    <small class="text-success fw-bold">LATEST NEWS</small>
+    <h2 class="fw-bold mb-5">
+      Mari berbagi dan peduli sebelum alam <br>
+      kehilangan kekuatannya.
+    </h2>
+
+    <!-- CARD -->
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="news-card">
+          <div class="news-img">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="img-fluid">
+            <div class="overlay">
+              <span><i class="fas fa-clock"></i> Dec 01, 2024</span>
+              <span><i class="fas fa-heart"></i> 3</span>
+              <span><i class="fas fa-comment"></i> 0</span>
+            </div>
+          </div>
+          <div class="news-content">
+            <h6>Save The Topic Forests</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adip sed eiusmod tempor.</p>
+            <a href="#" class="btn btn-success btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="news-card">
+          <div class="news-img">
+            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e" class="img-fluid">
+            <div class="overlay">
+              <span><i class="fas fa-clock"></i> Dec 01, 2024</span>
+              <span><i class="fas fa-heart"></i> 3</span>
+              <span><i class="fas fa-comment"></i> 0</span>
+            </div>
+          </div>
+          <div class="news-content">
+            <h6>Save The Topic Forests</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adip sed eiusmod tempor.</p>
+            <a href="#" class="btn btn-success btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="news-card">
+          <div class="news-img">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" class="img-fluid">
+            <div class="overlay">
+              <span><i class="fas fa-clock"></i> Dec 01, 2024</span>
+              <span><i class="fas fa-heart"></i> 3</span>
+              <span><i class="fas fa-comment"></i> 0</span>
+            </div>
+          </div>
+          <div class="news-content">
+            <h6>Save The Topic Forests</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adip sed eiusmod tempor.</p>
+            <a href="#" class="btn btn-success btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-lg-3 col-md-6">
+        <div class="news-card">
+          <div class="news-img">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e" class="img-fluid">
+            <div class="overlay">
+              <span><i class="fas fa-clock"></i> Dec 01, 2024</span>
+              <span><i class="fas fa-heart"></i> 3</span>
+              <span><i class="fas fa-comment"></i> 0</span>
+            </div>
+          </div>
+          <div class="news-content">
+            <h6>Save The Topic Forests</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adip sed eiusmod tempor.</p>
+            <a href="#" class="btn btn-success btn-sm">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- 8. Halaman Galeri Foto -->
+<section class="gallery-section py-5">
+  <div class="container text-center">
+    
+    <h6 class="text-success fw-bold">OUR WORK</h6>
+    <h2 class="fw-semibold mb-3">We consider environment welfare</h2>
+    <p class="text-muted mb-5">
+      Lorem ipsum dolor sit amet consectetur adip sed eiusmod amet consectetur adip sed eiusmod tempor ipsum dolor sit amet consectetur adip sed eiusmod tempor.
+    </p>
+
+    <div class="row g-3">
+      
+      <!-- Foto 1 -->
+      <div class="col-md-4">
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1593113630400-ea4288922497" class="img-fluid" alt="">
+          <div class="overlay">
+            <p>Beauty Of Life</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Foto 2 -->
+      <div class="col-md-4">
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" class="img-fluid" alt="">
+          <div class="overlay">
+            <p>Beauty Of Life</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Foto 3 -->
+      <div class="col-md-4">
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c" class="img-fluid" alt="">
+          <div class="overlay">
+            <p>Beauty Of Life</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- 9. Daftar Volunteer -->
+<section class="volunteer-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- KIRI (foto volunteer) -->
+      <div class="col-lg-6">
+        <div class="row g-3">
+          
+          <div class="col-6">
+            <div class="volunteer-card">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" class="img-fluid" alt="">
+              <div class="volunteer-overlay">
+                <h6>Michel Brown</h6>
+                <small>Communicator</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="volunteer-card">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e" class="img-fluid" alt="">
+              <div class="volunteer-overlay">
+                <h6>Michel Brown</h6>
+                <small>Communicator</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="volunteer-card">
+              <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce" class="img-fluid" alt="">
+              <div class="volunteer-overlay">
+                <h6>Michel Brown</h6>
+                <small>Communicator</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="volunteer-card">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" class="img-fluid" alt="">
+              <div class="volunteer-overlay">
+                <h6>Michel Brown</h6>
+                <small>Communicator</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- KANAN (teks) -->
+      <div class="col-lg-6 ps-lg-5 mt-4 mt-lg-0">
+        
+        <h6 class="text-success fw-bold">BECOME A VOLUNTEER?</h6>
+
+        <h3 class="fw-semibold mb-3">
+          Join your hand with us for a better life and beautiful future.
+        </h3>
+
+        <p class="text-muted">
+          Lorem ipsum dolor sit amet consectetur adip sed eiusmod amet consectetur
+          adip sed eiusmod tempor ipsum dolor sit amet consectetur adip sed eiusmod tempor.
+        </p>
+
+        <ul class="volunteer-list">
+          <li>We are friendly to each other.</li>
+          <li>If you join with us, We will give you free training.</li>
+          <li>It's an opportunity to help poor Environments.</li>
+          <li>No goal requirements.</li>
+          <li>Joining is totally free. We dont need any money from you.</li>
+        </ul>
+
+        <button class="btn btn-success mt-3 px-4">Join With Us</button>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 10. Footer -->
+<footer class="footer-section pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+
+      <!-- Newsletter -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Newsletter</h5>
+        <p>
+          Dolor amet sit justo amet elitr clita ipsum elitr est.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+
+        <div class="input-group mt-3">
+          <input type="email" class="form-control" placeholder="Enter your email">
+          <button class="btn btn-success">SignUp</button>
+        </div>
+      </div>
+
+      <!-- Our Services -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Our Services</h5>
+        <ul class="footer-list">
+          <li>Ocean Turtle</li>
+          <li>White Tiger</li>
+          <li>Social Ecology</li>
+          <li>Loneliness</li>
+          <li>Beauty of Life</li>
+          <li>Present for You</li>
+        </ul>
+      </div>
+
+      <!-- Volunteer -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Volunteer</h5>
+        <ul class="footer-list">
+          <li>Karen Dawson</li>
+          <li>Jack Simmons</li>
+          <li>Michael Linden</li>
+          <li>Simon Green</li>
+          <li>Natalie Channing</li>
+          <li>Caroline Gerwig</li>
+        </ul>
+      </div>
+
+      <!-- Gallery kecil -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5>Our Gallery</h5>
+
+        <div class="row g-2">
+          <div class="col-4">
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e" class="img-fluid">
+          </div>
+          <div class="col-4">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="img-fluid">
+          </div>
+          <div class="col-4">
+            <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e" class="img-fluid">
+          </div>
+
+          <div class="col-4">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e" class="img-fluid">
+          </div>
+          <div class="col-4">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" class="img-fluid">
+          </div>
+          <div class="col-4">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c" class="img-fluid">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
